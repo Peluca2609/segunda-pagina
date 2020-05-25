@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Declaración Jurada</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+<section class="form_wrap">
+
+  <form action="enviar.php" method="post" name="form1" class="form_contact">
+  <p>&nbsp;</p>
+  <h2><img src="LogoFalumsa.jpg" width="250" height="72" alt=""/></h2>
+  <h2 style="text-align: center">DECLARACION JURADA</h2><br>
+  <h3>TAMIZAJE DE SALUD POR COVID-19</h3>
+  <p align="justify">La empresa FALUMSA ha implementado de manera virtual el TAMIZAJE DE SALUD POR COVID-19 para detectar los posibles síntomas en cada usuario, el personal con factores de riesgo y evitar la propagación del COVID-19. El personal autorizado según el tamizaje podrá ingresar a FALUMSA presentando su DNI durante 3 días calendario, este procedimiento se realizará hasta finalizar con la  Emergencia Sanitaria a nivel nacional según el Decreto Supremo N° 008-2020-SA. </p>
+  <p>&nbsp;</p>
+  <table border="1" style="margin: 0 auto;">
+      <tr>
+        <td colspan="2" class="descripcion"><h4>NOMBRE Y APELLIDO:
+        <input name="Nombre" type="text" id="Nombre" placeholder="Escribe tu nombre completo" maxlength="30" required></h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="descripcion"><h4>DNI:
+        <input name="dni" type="integer" min= "0" id="dni" placeholder="Nro. de DNI" maxlength="8" required></h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="descripcion"><h4>EDAD:
+        <input name="edad" type="integer" min="0" id="edad" placeholder="Escribe tu Edad" maxlength="2" required></h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="descripcion"><h4>RESPONDE LAS SIGUIENTES PREGUNTAS</h4></td>
+      </tr>
+      <tr>
+        <td class="descripcion"><p align="justify">a) En los últimos 14 días, ¿Ha tenido contacto con un caso confirmado de Coronavirus COVID 19?</p></td>
+        <td>
+          <input type="radio" name="preguntauno" checked="checked" value="SI"> SI &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="preguntauno" value="NO"> NO
+        </td>
+      </tr>
+      <tr>
+        <td class="descripcion"><p align="justify">b) En los últimos días ¿alguna persona en su domicilio ha presentado o presenta síntomas de GRIPE, RESFRIO o alguna otra ENFERMEDAD RESPIRATORIA AGUDA?</p></td>
+        <td>
+          <input type="radio" name="preguntados" checked="checked" value="SI"> SI &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="preguntados" value="NO"> NO
+        </td>
+      </tr>
+      <tr>
+        <td class="descripcion"><p align="justify">c) En los últimos días, ¿ha visitado algún establecimiento de salud?</p></td>
+        <td>
+          <input type="radio" name="preguntatres" checked="checked" value="SI"> SI &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="preguntatres" value="NO"> NO
+        </td>
+      </tr>
+      <tr>
+        <td class="descripcion"><p align="justify">d) En los últimos días, ¿Usted ha presentado o presenta síntomas deGRIPE, RESFRIO o alguna otra ENFERMEDAD RESPIRATORIA AGUDA?</p></td>
+        <td>
+          <input type="radio" name="preguntacuatro" checked="checked" value="SI"> SI &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="preguntacuatro" value="NO"> NO
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="descripcion"><h4>MARCA CON UN ASPA, SI PADECES DE ALGUNA ENFERMEDAD</h4></td>
+      </tr>
+      <tr>
+        <td class="descripcion" colspan="2">
+          <p><input type="checkbox" name="checkbox1" value="1"/> Hipertensiòn arterial no controlada</p><br>
+          <p><input type="checkbox" name="checkbox2" value="2"/> Enfermedades cardiovasculares graves</p><br>
+          <p><input type="checkbox" name="checkbox3" value="3"/> Càncer</p><br>
+          <p><input type="checkbox" name="checkbox4" value="4"/> Diabetes Melitus</p><br>
+          <p><input type="checkbox" name="checkbox5" value="5"/> Enfermedad pulmonar cronica</p><br>
+          <p><input type="checkbox" name="checkbox6" value="6"/> Insuficiencia renal cronica en tratamiento con hermodialisis</p><br>
+          <P><input type="checkbox" name="checkbox7" value="7"/> Enfermedad o tratamiento inmunosupresor</p><br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="descripcion"><h4>PESO:
+            <input name="peso" type="integer" id="peso" placeholder="peso en kg" maxlength="3" required></h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="descripcion"><h4>TALLA:
+            <input name="talla" type="integer" id="talla" placeholder="talla en metros" maxlength="4" required></h4>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+            <input type="submit" name="submit" id="submit" value="Enviar">
+        </td>
+      </tr>
+
+  </table>
+  </form>
+</section>
+</body>
+</html>
